@@ -8,7 +8,7 @@ local entityTable = Spawner.createEntity({
     Model = "rbxassetid://11801716344/", -- Can be GitHub file or rbxassetid
     Speed = 10000, -- Percentage, 100 = default Rush speed
     DelayTime = 20, -- Time before starting cycles (seconds)
-    HeightOffset = 4,
+    HeightOffset = ,
     CanKill = true,
     KillRange = 10000,
     BackwardsMovement = false,
