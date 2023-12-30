@@ -4,7 +4,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utiliti
 
 -- Create entity
 local entityTable = Spawner.createEntity({
-    CustomName = "Prime a 60", -- Custom name of your entity
+    CustomName = "PrimesA-60", -- Custom name of your entity
     Model = "rbxassetid://11801716344/", -- Can be GitHub file or rbxassetid
     Speed = 10000, -- Percentage, 100 = default Rush speed
     DelayTime = 10, -- Time before starting cycles (seconds)
@@ -48,7 +48,7 @@ local entityTable = Spawner.createEntity({
             Tease = {
                 true, -- Enabled/Disabled
                 Min = 1,
-                Max = 3,
+                Max = 1,
             },
         },
     },
