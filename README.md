@@ -7,7 +7,7 @@ local entityTable = Spawner.createEntity({
     CustomName = "Prime a 60", -- Custom name of your entity
     Model = "rbxassetid://11801716344/", -- Can be GitHub file or rbxassetid
     Speed = 10000, -- Percentage, 100 = default Rush speed
-    DelayTime = 20, -- Time before starting cycles (seconds)
+    DelayTime = 5, -- Time before starting cycles (seconds)
     HeightOffset = ,
     CanKill = true,
     KillRange = 10000,
@@ -15,7 +15,7 @@ local entityTable = Spawner.createEntity({
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        15, -- Time (seconds)
+        25, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
