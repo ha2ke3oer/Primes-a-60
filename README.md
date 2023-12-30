@@ -15,12 +15,12 @@ local entityTable = Spawner.createEntity({
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        25, -- Time (seconds)
+        5, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
         Max = 4,
-        WaitTime = 0,
+        WaitTime = 1,
     },
     CamShake = {
         true, -- Enabled/Disabled
