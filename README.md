@@ -7,15 +7,15 @@ local entityTable = Spawner.createEntity({
     CustomName = "Prime a 60", -- Custom name of your entity
     Model = "rbxassetid://11801716344/", -- Can be GitHub file or rbxassetid
     Speed = 10000, -- Percentage, 100 = default Rush speed
-    DelayTime = 50, -- Time before starting cycles (seconds)
-    HeightOffset = 5,
+    DelayTime = 20, -- Time before starting cycles (seconds)
+    HeightOffset = 4,
     CanKill = true,
     KillRange = 10000,
     BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        1, -- Time (seconds)
+        15, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
@@ -52,7 +52,7 @@ local entityTable = Spawner.createEntity({
             },
         },
     },
-    CustomDialog = {"You can", "put your", "custom death", "message here."}, -- Custom death message
+    CustomDialog = {"You died to who you call PrimesA-60...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to Hide when you can."}, -- Custom death message
 })
 
 
