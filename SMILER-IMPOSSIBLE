@@ -1,0 +1,60 @@
+local Spawn  = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+            -- Create entity
+            local Trauma = Creator.createEntity({
+                CustomName = "Smiler", -- Custom name of your entity
+                Model = "12103641132 ", -- Can be GitHub file or rbxassetid
+                Speed = 3000, -- Percentage, 100 = default Rush speed
+                DelayTime = 20,
+            KillRange=10000,-- Time before starting cycles (seconds)
+            HeightOffset = 1,
+            CanKill = true,
+            BreakLights = false,
+                BackwardsMovement = false,
+                FlickerLights = {
+                    true, -- Enabled/Disabled
+                    5, -- Time (seconds)
+                },
+                Cycles = {
+                    Min = 2,
+                    Max = 2,
+                    WaitTime = 0,
+                },
+                CamShake = {
+                    true, -- Enabled/Disabled
+                    {5.5, 50, 0.5, 2}, -- Shake values (don't change if you don't know)
+                    100, -- Shake start distance (from Entity to you)
+                },
+                Jumpscare = {
+                    true, -- Enabled/Disabled
+                    {
+                        Image1 = "nil", -- Image1 url
+                        Image2 = "rbxassetid://11278624160", -- Image2 url
+                        Shake = true,
+                        Sound1 = {
+                            10483790459, -- SoundId
+                            { Volume = 0 }, -- Sound properties
+                        },
+                        Sound2 = {
+                            5263560566, -- SoundId
+                            { Volume = 0.5 }, -- Sound properties
+                        },
+                        Flashing = {
+                            true, -- Enabled/Disabled
+                            Color3.fromRGB(255, 255, 255), -- Color
+                        },
+                        Tease = {
+                            true, -- Enabled/Disabled
+                            Min = 1,
+                            Max = 3,
+                        },
+                    },
+                },
+                CustomDialog = {"You died to Smiler...", "Use what you've learned from Rush and Ambush!","This Mob Randomly Spawns Theres No Patten to it"}, -- Custom death message
+            })
+
+            -----[[ Advanced ]]-----
+            ------------------------
+
+            -- Run the created entity
+            Creator.runEntity(Table)
