@@ -1,12 +1,11 @@
-local Spawner = 
-
+local Spawner =
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 -- Create entity
 local entityTable = Spawner.createEntity({
     CustomName = "PrimesA-60", -- Custom name of your entity
     Model = "rbxassetid://11801716344/", -- Can be GitHub file or rbxassetid
-    Speed = 1000, -- Percentage, 100 = default Rush speed
+    Speed = 10000, -- Percentage, 100 = default Rush speed
     DelayTime = 10, -- Time before starting cycles (seconds)
     HeightOffset = ,
     CanKill = true,
@@ -52,7 +51,7 @@ local entityTable = Spawner.createEntity({
             },
         },
     },
-    CustomDialog = {"You died to who you call PrimesA-60...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to Hide when you can."}, -- Custom death message
+    CustomDialog = {"You died to who you call PrimesA-60", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to Hide when you can."}, -- Custom death message
 })
 
 
@@ -85,7 +84,5 @@ entityTable.Debug.OnDeath = function()
     warn("Player has died.")
 end
 ------------------------------------
-
-
 -- Run the created entity
 Spawner.runEntity(entityTable)
