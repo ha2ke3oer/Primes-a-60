@@ -4,8 +4,8 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entityTable = Spawner.createEntity({
     CustomName = "Primes a 60", -- Custom name of your entity
     Model = "rbxassetid://11801716344/", -- Can be GitHub file or rbxassetid
-    Speed = 100, -- Percentage, 100 = default Rush speed
-    DelayTime = 2, -- Time before starting cycles (seconds)
+    Speed = 10000, -- Percentage, 100 = default Rush speed
+    DelayTime = 15, -- Time before starting cycles (seconds)
     HeightOffset = 2,
     CanKill = true,
     KillRange = 50000,
@@ -13,7 +13,7 @@ local entityTable = Spawner.createEntity({
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        1, -- Time (seconds)
+        10, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
