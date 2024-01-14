@@ -29,8 +29,8 @@ local entityTable = Spawner.createEntity({
     Jumpscare = {
         true, -- Enabled/Disabled
         {
-            Image1 = "rbxassetid://10483855823", -- Image1 url
-            Image2 = "rbxassetid://10483999903", -- Image2 url
+            Image1 = "rbxassetid://11826898817", -- Image1 url
+            Image2 = "rbxassetid://11867753039", -- Image2 url
             Shake = true,
             Sound1 = {
                 10483790459, -- SoundId
@@ -51,7 +51,7 @@ local entityTable = Spawner.createEntity({
             },
         },
     },
-    CustomDialog = {"You can", "put your", "custom death", "message here."}, -- Custom death message
+    CustomDialog = {"You died to who you call A-60...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to Hide when you can."}, -- Custom death message
 })
  
  
