@@ -5,19 +5,19 @@
 local entityTable = Spawner.createEntity({
     CustomName = "A-60", -- Custom name of your entity
     Model = "15089669896", -- Can be GitHub file or rbxassetid
-    Speed = 190, -- Percentage, 100 = default Rush speed
-    DelayTime = 2, -- Time before starting cycles (seconds)
-    HeightOffset = 0,
-    CanKill = false,
+    Speed = 1990, -- Percentage, 100 = default Rush speed
+    DelayTime = 5, -- Time before starting cycles (seconds)
+    HeightOffset = 2,
+    CanKill = true,
     KillRange = 50,
     BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        1, -- Time (seconds)
+        2, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
+        Min = 4,
         Max = 4,
         WaitTime = 2,
     },
@@ -33,11 +33,11 @@ local entityTable = Spawner.createEntity({
             Image2 = "rbxassetid://11867753039", -- Image2 url
             Shake = true,
             Sound1 = {
-                10483790459, -- SoundId
+                5263560566, -- SoundId
                 { Volume = 0.5 }, -- Sound properties
             },
             Sound2 = {
-                10483837590, -- SoundId
+                5263560566, -- SoundId
                 { Volume = 0.5 }, -- Sound properties
             },
             Flashing = {
